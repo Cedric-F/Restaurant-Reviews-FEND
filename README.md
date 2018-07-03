@@ -52,6 +52,7 @@ None
 ### Dependencies
 
 * [Google Normalize.css](https://code.google.com/archive/p/normalize-css/)
+* [Google Maps' API](https://developers.google.com/maps/documentation/)
 
 ### Compatibility
 
