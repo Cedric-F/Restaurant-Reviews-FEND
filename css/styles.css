@@ -313,6 +313,10 @@ nav h1 a {
 #restaurant-hours {
   width: 100%;
   justify-content: space-around;
+  flex-wrap: wrap;
+}
+#restaurant-hours caption {
+  width: 100%;
 }
 #restaurant-hours th {
   color: #333;
