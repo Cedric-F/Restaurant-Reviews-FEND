@@ -1,28 +1,63 @@
-# Mobile Web Specialist Certification Course
+# Front End Web Developer Certification Course
+
 ---
-#### _Three Stage Course Material Project - Restaurant Reviews_
 
-## Project Overview: Stage 1
+## Restaurant Reviews static application
 
-For the **Restaurant Reviews** projects, you will incrementally convert a static webpage to a mobile-ready web application. In **Stage One**, you will take a static design that lacks accessibility and convert the design to be responsive on different sized displays and accessible for screen reader use. You will also add a service worker to begin the process of creating a seamless offline experience for your users.
+Stage 1 of the Restaurant Reviews progressive app for the Udacity MWS course.
 
-### Specification
+### Getting started
 
-You have been provided the code for a restaurant reviews website. The code has a lot of issues. It’s barely usable on a desktop browser, much less a mobile device. It also doesn’t include any standard accessibility features, and it doesn’t work offline at all. Your job is to update the code to resolve these issues while still maintaining the included functionality. 
+#### Installation
 
-### What do I do from here?
+*Cloning the repository*
 
-1. In this folder, start up a simple HTTP server to serve up the site files on your local computer. Python has some simple tools to do this, and you don't even need to know Python. For most people, it's already installed on your computer. 
+```
+git clone https://github.com/Cedric-F/Restaurant-Reviews-FEND.git
+```
 
-In a terminal, check the version of Python you have: `python -V`. If you have Python 2.x, spin up the server with `python -m SimpleHTTPServer 8000` (or some other port, if port 8000 is already in use.) For Python 3.x, you can use `python3 -m http.server 8000`. If you don't have Python installed, navigate to Python's [website](https://www.python.org/) to download and install the software.
+#### Kickstart the server
 
-2. With your server running, visit the site: `http://localhost:8000`, and look around for a bit to see what the current experience looks like.
-3. Explore the provided code, and make start making a plan to implement the required features in three areas: responsive design, accessibility and offline use.
-4. Write code to implement the updates to get this site on its way to being a mobile-ready website.
+Different options depending on your preferences:
 
-### Note about ES6
+- Execute the `server.bat` script that will run the npm http server and open the project.
+- In your terminal, run `http-server ./` and open your favorite browser at the address: `localhost:8080`.
+- Use your favorite local server.
+Might not work with `python` as it seems to override the files' MIME types and cause issues with the service worker.
 
-Most of the code in this project has been written to the ES6 JavaScript specification for compatibility with modern web browsers and future proofing JavaScript code. As much as possible, try to maintain use of ES6 in any additional JavaScript you write. 
+### Using the application
 
+#### Testing Accessibility
 
+Install the Chrome Vox extension (or any screen reader) and navigate through the page using tab.
 
+#### Testing Offline mode
+
+- Press F12 and in the `Application` tab, check the `Offline` box.
+
+***or***
+
+- Stop the server.
+
+Now, only the cached files and visited pages should work.
+
+#### Testing responsiveness
+
+Use the Chrome Device emulator to simulate different smartphones and tablets.
+
+### License
+
+None
+
+### Dependencies
+
+* [Google Normalize.css](https://code.google.com/archive/p/normalize-css/)
+
+### Compatibility
+
+Tested on:
+
+* Chrome
+* Chrome Canary
+* FireFox
+* FireFox Dev edition
