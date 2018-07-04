@@ -17,12 +17,12 @@
     <!-- Beginning nav -->
     <nav>
       <h1><a href="./">Restaurant Reviews</a></h1>
+	    <!-- Beginning breadcrumb -->
+	    <ul id="breadcrumb" aria-label="Breadcrumb">
+	      <li><a href="./">Home</a></li>
+	    </ul>
+	    <!-- End breadcrumb -->
     </nav>
-    <!-- Beginning breadcrumb -->
-    <ul id="breadcrumb" >
-      <li><a href="./">Home</a></li>
-    </ul>
-    <!-- End breadcrumb -->
     <!-- End nav -->
   </header>
   <!-- End header -->
@@ -32,12 +32,12 @@
     <div id="wrap">
       <!-- Beginning restaurant -->
       <section id="restaurant-container">
-        <h1 id="restaurant-name"></h1>
+        <h2 id="restaurant-name"></h2>
         <img id="restaurant-img">
         <p id="restaurant-cuisine"></p>
         <p id="restaurant-address"></p>
         <table id="restaurant-hours" tabindex="0">
-        	<caption style="width:100%">Opening hours</caption>
+        	<caption>Opening hours</caption>
         </table>
       </section>
       <!-- end restaurant -->
@@ -46,11 +46,11 @@
         <div id="reviews-list"></div>
       </section>
       <!-- End reviews -->
+    	<a href="#footer" class="skip" aria-label="Skip the map and go to the footer">Skip to footer</a>
     </div>
-    <a href="#footer" class="skip">Skip to footer</a>
     <!-- Beginning map -->
     <section id="map-container">
-      <div id="map" application="role"></div>
+      <div id="map" role="application"></div>
     </section>
     <!-- End map -->
   </main>
